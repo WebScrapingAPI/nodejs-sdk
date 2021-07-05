@@ -1,0 +1,31 @@
+{
+  "name": "webscrapingapi",
+  "version": "1.0.0",
+  "description": "WebScrapingApi NodeJS SDK",
+  "main": "src/index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebScrapingAPI/webscrapingapi-nodejs-sdk.git"
+  },
+  "keywords": [
+    "webscraping",
+    "webscrapingapi",
+    "webscrapingapi",
+    "nodejs",
+    "sdk",
+    "scrape",
+    "scraper"
+  ],
+  "author": "WebScrapingApi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebScrapingAPI/webscrapingapi-nodejs-sdk/issues"
+  },
+  "homepage": "https://github.com/WebScrapingAPI/webscrapingapi-nodejs-sdk#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
