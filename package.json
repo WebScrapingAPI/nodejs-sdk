@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WebScrapingAPI/webscrapingapi-nodejs-sdk.git"
+    "url": "git+https://github.com/WebScrapingAPI/nodejs-sdk.git"
   },
   "keywords": [
     "webscraping",
@@ -17,14 +17,15 @@
     "nodejs",
     "sdk",
     "scrape",
-    "scraper"
+    "scraper",
+    "scraping"
   ],
   "author": "WebScrapingApi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WebScrapingAPI/webscrapingapi-nodejs-sdk/issues"
+    "url": "https://github.com/WebScrapingAPI/nodejs-sdk/issues"
   },
-  "homepage": "https://github.com/WebScrapingAPI/webscrapingapi-nodejs-sdk#readme",
+  "homepage": "https://github.com/WebScrapingAPI/nodejs-sdk#readme",
   "dependencies": {
     "axios": "^0.21.1"
   }
