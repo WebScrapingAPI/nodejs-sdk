@@ -2,7 +2,7 @@
   "name": "webscrapingapi",
   "version": "1.0.5",
   "description": "WebScrapingApi NodeJS SDK",
-  "main": "src/index.js",
+  "main": "src/index.mjs",
   "type": "module",
   "scripts": {
     "test": ""
