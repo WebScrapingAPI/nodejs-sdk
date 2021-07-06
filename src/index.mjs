@@ -5,7 +5,7 @@ class WebScrapingApiClient {
         this.api_key = api_key;
         this.api_url = "https://api.webscrapingapi.com/v1";
     }
-    #request(method, url, params = {}, headers = {}, data = {}, callback) {
+    #request(method, url, params = {}, headers = {}, data = {}) {
         params['url'] = url;
         params['api_key'] = this.api_key;
 
@@ -15,22 +15,24 @@ class WebScrapingApiClient {
         }).join('&');
         let final_url = this.api_url + '?' + queryString;
 
-        axios({
-            method: method,
-            url: final_url,
-            data: data,
-            headers: headers,
-        }).then(function (response){
-            callback({success: true, response: response});
-        }).catch(function (error) {
-            callback({success: false, error: error});
-        })
+        return new Promise(resolve => {
+            axios({
+                method: method,
+                url: final_url,
+                data: data,
+                headers: headers,
+            }).then(function (response){
+                resolve({success: true, response: response});
+            }).catch(function (error) {
+                resolve({success: false, error: error});
+            })
+        });
     }
-    get(url, params = {}, headers = {}, callback) {
-        this.#request('GET', url, params, headers, {}, callback);
+    async get(url, params = {}, headers = {}) {
+        return await this.#request('GET', url, params, headers, {});
     }
-    post(url, params = {}, headers = {}, data={}, callback) {
-        this.#request('POST', url, params, headers, data, callback);
+    async post(url, params = {}, headers = {}, data={}) {
+        return await this.#request('POST', url, params, headers, data);
     }
 }
 
