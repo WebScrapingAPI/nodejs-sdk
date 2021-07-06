@@ -2,8 +2,14 @@
   "name": "webscrapingapi",
   "version": "1.0.6",
   "description": "WebScrapingApi NodeJS SDK",
-  "main": "src/index.mjs",
-  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "require":  "./src/index.js",
+      "default": "./src/index.mjs"
+    }
+  },
+  "module": "./src/index.mjs",
   "scripts": {
     "test": ""
   },

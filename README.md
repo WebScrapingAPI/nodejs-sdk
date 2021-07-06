@@ -20,8 +20,8 @@ Using the SDK it's quite easy.
 An example of a GET call to the API is the following:
 
 ```
-// import webScrapingApiClient from 'webscrapingapi';
-const webScrapingApiClient = require('webscrapingapi');
+// import webScrapingApiClient from 'webscrapingapi'; // For ES6
+const webScrapingApiClient = require('webscrapingapi'); // For CommonJS
 
 const client = new webScrapingApiClient("API_KEY");
 

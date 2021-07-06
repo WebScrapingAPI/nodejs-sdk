@@ -1,4 +1,4 @@
-const webScrapingApiClient = require('../src/index.js');
+import webScrapingApiClient from '../src/index.mjs';
 
 const client = new webScrapingApiClient("API_KEY");
 
