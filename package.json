@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "WebScrapingApi NodeJS SDK",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": ""
   },

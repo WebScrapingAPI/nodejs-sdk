@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 class WebScrapingApiClient {
     constructor(api_key) {
@@ -34,4 +34,4 @@ class WebScrapingApiClient {
     }
 }
 
-module.exports = WebScrapingApiClient
+export default WebScrapingApiClient
