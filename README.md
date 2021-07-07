@@ -7,7 +7,7 @@ WebScrapingApi is an API that allows scraping websites while using rotating prox
 Run the following command in the main folder of your project:
 
 ```
-npm i webscrapingapi
+npm i webscrapingapi --save
 ```
 
 ## API Key
