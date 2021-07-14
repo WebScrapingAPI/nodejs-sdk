@@ -5,7 +5,7 @@ class WebScrapingApiClient {
         this.api_key = api_key;
         this.api_url = "https://api.webscrapingapi.com/v1";
     }
-    #request(method, url, params = {}, headers = {}, data = {}) {
+    request(method, url, params = {}, headers = {}, data = {}) {
         params['url'] = url;
         params['api_key'] = this.api_key;
 
@@ -29,10 +29,10 @@ class WebScrapingApiClient {
         });
     }
     async get(url, params = {}, headers = {}) {
-        return await this.#request('GET', url, params, headers, {});
+        return await this.request('GET', url, params, headers, {});
     }
     async post(url, params = {}, headers = {}, data={}) {
-        return await this.#request('POST', url, params, headers, data);
+        return await this.request('POST', url, params, headers, data);
     }
 }
 
