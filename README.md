@@ -1,6 +1,6 @@
 # WebScrapingApi NodeJS SDK
 
-WebScrapingApi is an API that allows scraping websites while using rotating proxies to prevent bans. This SDK for Python makes the usage of the API easier to implement in any project you have.
+WebScrapingApi is an API that allows scraping websites while using rotating proxies to prevent bans. This SDK for NodeJS makes the usage of the API easier to implement in any project you have.
 
 ## Installation
 
