@@ -60,4 +60,12 @@ async function exampleUsage() {
 exampleUsage();
 ```
 
-For a better understanding of the parameters, please check out [our documentation](https://app.webscrapingapi.com/documentation/getting-started)
+For a better understanding of the parameters, please check out [our documentation](http://docs.webscrapingapi.com)
+
+## CHANGELOG
+
+**1.1.0**
+- Added support for `http.maxHeaderSize`
+- Switched from `axios` to `got`
+
+**Important!** Please note that the response structure in `v.1.1.0` follows `got` response structure and the Object received is differeent compared to previous versions!
