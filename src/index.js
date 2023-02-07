@@ -4,8 +4,7 @@ class WebScrapingApiClient {
         this.api_url = "https://api.webscrapingapi.com/v1";
     }
     async #request(method, url, params = {}, headers = {}, data = {}) {
-        const {got} = await import('got')
-        const {Options} = await import('got')
+        const {got, Options} = await import('got')
 
         params['url'] = url;
         params['api_key'] = this.api_key;
