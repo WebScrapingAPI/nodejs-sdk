@@ -1,6 +1,6 @@
 {
   "name": "webscrapingapi",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "WebScrapingApi NodeJS SDK",
   "main": "src/index.js",
   "exports": {
